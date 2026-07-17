@@ -1,7 +1,13 @@
 import streamlit as st
-from streamlit_reveal_slides import reveal_slides
 
 st.set_page_config(page_title="Sunday School", layout="wide", page_icon="📖")
+
+# --- Try importing reveal_slides, fallback gracefully ---
+try:
+    from streamlit_reveal_slides import reveal_slides
+    HAS_SLIDES = True
+except ModuleNotFoundError:
+    HAS_SLIDES = False
 
 # --- Quiz data ---
 QUIZZES = {
@@ -30,7 +36,9 @@ with st.sidebar:
     lesson = st.selectbox("Lesson", list(LESSONS.keys()), index=1)
     mode = st.radio("Mode", ["Slides", "Interactive Quiz"], index=0)
     st.markdown("---")
-    st.caption("Ages 12-16 • streamlit-reveal-slides")
+    if not HAS_SLIDES:
+        st.warning("Slide viewer (streamlit-reveal-slides) not installed – showing markdown fallback.")
+    st.caption("Ages 12-16")
 
 # --- Slides mode ---
 if mode == "Slides":
@@ -38,21 +46,20 @@ if mode == "Slides":
     try:
         with open(md_file, "r", encoding="utf-8") as f:
             content = f.read()
-        reveal_slides(
-            content,
-            height=700,
-            theme="black",
-            config={
-                "transition": "slide",
-                "controls": True,
-                "progress": True,
-            },
-            initial_slide=0,
-            key=lesson,
-        )
+        if HAS_SLIDES:
+            reveal_slides(
+                content,
+                height=700,
+                theme="black",
+                config={"transition": "slide", "controls": True, "progress": True},
+                initial_slide=0,
+                key=lesson,
+            )
+        else:
+            st.info("Install `streamlit-reveal-slides` for full slide mode. Showing markdown preview:")
+            st.markdown(content, unsafe_allow_html=True)
     except FileNotFoundError:
         st.error(f"Missing {md_file}")
-        st.info("Make sure genesis.md / 2kings.md are in the repo root.")
 
 # --- Interactive Quiz mode ---
 else:
