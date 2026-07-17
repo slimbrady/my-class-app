@@ -1,2 +1,4 @@
 streamlit
 streamlit-reveal-slides
+qrcode[pil]
+pandas
