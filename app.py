@@ -22,7 +22,7 @@ st.html(
 )
 
 # 2. Your existing code that reads and shows the .md file
-with open("your_file.md", "r") as f:
+with open("2kings.md", "r") as f:
     markdown_content = f.read()
 
 st.markdown(markdown_content)
