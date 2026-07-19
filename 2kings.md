@@ -96,12 +96,9 @@
       <img src="https://i.pinimg.com/1200x/52/0b/f9/520bf96601ea418a7a9ab64de34b16ee.jpg" style="width:100%; max-width:340px; border-radius:10px; box-shadow: 0 6px 20px rgba(0,0,0,0.4);" alt="Kings timeline diagram">
       <p style="color:#aaa; font-size:0.55em; margin-top:6px;">Kings timeline</p>
     </div>
-    <div style="flex:1; min-width:220px; display:flex; align-items:center; justify-content:center; min-height:200px; background:rgba(255,255,255,0.05); border-radius:10px; padding:20px;">
-      <div style="text-align:center;">
-        <p style="color:#ffd700; font-size:0.9em;">📖 Kings Timeline</p>
-        <p style="color:#ccc; font-size:0.7em; margin-top:10px;"><a href="https://www.pinterest.com/pin/319544536086478056/" target="_blank" style="color:#4ade80;">View on Pinterest →</a></p>
-        <p style="color:#888; font-size:0.55em; margin-top:8px;">Kings of the Bible<br>Old Testament kings timeline<br>2nd Kings</p>
-      </div>
+    <div style="flex:1; min-width:280px;">
+      <img src="assets/12-tribes-of-israel.jpg" style="width:100%; max-width:340px; border-radius:10px; box-shadow: 0 6px 20px rgba(0,0,0,0.4);" alt="The 12 Tribes of Israel – Descendants of the 12 Sons of Jacob">
+      <p style="color:#aaa; font-size:0.55em; margin-top:6px;">The 12 Tribes of Israel – Genesis 49:28</p>
     </div>
   </div>
   <p style="color:#ccc; font-size:0.7em; margin-top:15px;">2 Kings 16–25 covers the last kings of Judah: Ahaz → Hezekiah → Manasseh → Josiah → … → Zedekiah (fall of Jerusalem)</p>
