@@ -4,7 +4,6 @@ from datetime import datetime
 from collections import Counter
 
 st.set_page_config(page_title="Sunday School", layout="wide", page_icon="📖")
-import streamlit as st
 
 st.html(
     """
@@ -21,55 +20,59 @@ st.html(
     """
 )
 
-# 2. Your existing code that reads and shows the .md file
-with open("2kings.md", "r") as f:
-    markdown_content = f.read()
-
-st.markdown(markdown_content)
-
-# --- Global CSS: bigger quiz fonts, slide depth, remove dotted lines ---
+# --- Global CSS: bigger quiz fonts, slide depth, remove dotted lines --- 
 st.markdown("""
 <style>
 /* Bigger quiz fonts */
-.stRadio > label, div[data-testid="stRadio"] label {
-    font-size: 1.25rem !important;
+.stRadio > label, div[data-testid="stRadio"] label { 
+    font-size: 1.25rem !important; 
 }
-div[data-testid="stRadio"] div[role="radiogroup"] label {
-    font-size: 1.35rem !important;
-    padding: 0.5rem 0 !important;
-    line-height: 1.5 !important;
+div[data-testid="stRadio"] div[role="radiogroup"] label { 
+    font-size: 1.35rem !important; 
+    padding: 0.5rem 0 !important; 
+    line-height: 1.5 !important; 
 }
+
 /* Question text */
-h3, .stMarkdown h3 {
-    font-size: 1.9rem !important;
+h3, .stMarkdown h3 { 
+    font-size: 1.9rem !important; 
 }
+
 /* Quiz container – add indentation / depth */
-section.main > div, .block-container {
-    padding-left: 1.5rem !important;
+section.main > div, .block-container { 
+    padding-left: 1.5rem !important; 
 }
-div[data-testid="stVerticalBlock"] > div:has(> div[data-testid="stRadio"]) {
-    background: #ffffff;
-    border-radius: 14px;
-    padding: 1.5rem 1.8rem !important;
-    margin-left: 12px;
-    box-shadow: 0 4px 18px rgba(0,0,0,0.07), -4px 0 0 #0ea5b9;
-    border-left: 5px solid #0ea5b9;
+div[data-testid="stVerticalBlock"] > div:has(> div[data-testid="stRadio"]) { 
+    background: #ffffff; 
+    border-radius: 14px; 
+    padding: 1.5rem 1.8rem !important; 
+    margin-left: 12px; 
+    box-shadow: 0 4px 18px rgba(0,0,0,0.07), -4px 0 0 #0ea5b9; 
+    border-left: 5px solid #0ea5b9; 
 }
-/* Remove any dotted top borders */
-*, *::before, *::after {
-    border-top-style: none !important;
-}
-div[data-testid="stVerticalBlock"] > div:has(> div[data-testid="stRadio"])::before,
-.slide-header::after {
+
+/* SAFELY target and remove ONLY dotted/horizontal slide dividers */
+hr {
+    border: none !important;
+    height: 0 !important;
     display: none !important;
-    content: none !important;
 }
+.stMarkdownContainer hr {
+    display: none !important;
+}
+
+div[data-testid="stVerticalBlock"] > div:has(> div[data-testid="stRadio"])::before, .slide-header::after { 
+    display: none !important; 
+    content: none !important; 
+}
+
 /* Bigger radio option text specifically */
-div[role="radiogroup"] p {
-    font-size: 1.3rem !important;
+div[role="radiogroup"] p { 
+    font-size: 1.3rem !important; 
 }
 </style>
 """, unsafe_allow_html=True)
+
 
 # --- Try imports ---
 try:
