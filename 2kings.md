@@ -13,9 +13,11 @@
 -->
 
 <style>
-/* --- Global clean reset: kill ALL top lines/borders --- */
+/* --- NUKE ALL TOP LINES / DOTS --- */
 *, *::before, *::after {
+  border: none !important;
   border-top: none !important;
+  outline: none !important;
 }
 .reveal *, .reveal *::before, .reveal *::after {
   box-shadow: none !important;
@@ -28,20 +30,23 @@
   box-shadow: none !important;
   outline: none !important;
 }
-.reveal .slide-header::after { display:none !important; content:none !important; }
+.reveal .progress, .reveal .slide-number, .reveal .controls, .reveal .playback,
+.reveal .speaker-notes, .reveal .pause-overlay { display: none !important; }
+hr, .slide-header::after { display:none !important; content:none !important; }
 
-/* --- Typography: compact so everything fits --- */
+/* --- Typography --- */
 .reveal h1 { font-size: 2.2em; }
 .reveal h2 { font-size: 1.6em; }
 .reveal h3 { font-size: 1.5em; }
 .reveal p, .reveal li { font-size: 0.85em; line-height: 1.45; }
 .reveal ul { margin: 10px auto; }
 
-/* Quiz specific */
-.quiz-q { font-size: 1.5em !important; }
-.quiz-opts li { font-size: 1.05em !important; margin-bottom: 8px; }
+/* GC Quote – BIG */
+.gc-quote { font-size: 1.35em !important; line-height: 1.5 !important; color: #ffd700 !important; font-style: italic !important; }
+.gc-speaker-img { width: 210px !important; height: 210px !important; border-radius: 50% !important; object-fit: cover !important; }
+.gc-attrib { font-size: 0.78em !important; color: #ccc !important; }
+.gc-context { font-size: 0.7em !important; color: #ccc !important; }
 
-/* Tighten spacing globally */
 .reveal .slides section { padding: 15px 30px !important; }
 </style>
 
@@ -50,7 +55,7 @@
   <h1>2 Kings 16–25</h1>
   <h2 style="color: #e94560;">Faithful Kings • Fallen Kingdom</h2>
   <p style="color: #cccccc;">Ahaz • Hezekiah • Manasseh • Josiah • Babylon</p>
-  <p style="color:#aaa; font-size:0.55em; margin-top:30px">👆 Arrow keys to advance • ⬇️ Down for quiz answers</p>
+  <p class="gc-context">👆 Arrow keys to advance • ⬇️ Down for quiz answers</p>
 </section>
 
 ---
@@ -66,7 +71,7 @@
         <li><strong>1 Samuel:</strong> Samuel the prophet • Saul anointed • David defeats Goliath</li>
         <li><strong>2 Samuel:</strong> David king • Jerusalem capital • Davidic covenant</li>
       </ul>
-      <p style="color:#aaa; font-size:0.65em; margin-top:10px;">The 12 Tribes united under Saul, then David</p>
+      <p class="gc-context">The 12 Tribes united under Saul, then David</p>
     </div>
   </div>
 </section>
@@ -121,9 +126,9 @@
 <!-- SLIDE 6: GC Quote – Andersen -->
 <section data-background-color="#0f3460">
   <div style="display:flex; align-items:center; gap:25px; max-width:900px; margin:0 auto;">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Neil_L._Andersen_April_2019.jpg" style="width:150px; height:150px; border-radius:50%; object-fit:cover; border:3px solid #e94560;" alt="Elder Neil L. Andersen">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Neil_L._Andersen_April_2019.jpg" class="gc-speaker-img" style="border:3px solid #e94560;" alt="Elder Neil L. Andersen">
     <div style="text-align:left;">
-      <p style="color:#ffd700; font-size:1.1em; font-style:italic;">"We care more about being His followers than being 'liked' by our own followers."</p>
+      <p class="gc-quote">"We care more about being His followers than being 'liked' by our own followers."</p>
       <p style="color:#ccc; margin-top:10px; font-size:0.75em;">— Elder Neil L. Andersen<br>"We Talk of Christ" • Oct 2020</p>
       <p style="color:#aaa; font-size:0.7em; margin-top:8px;">Ahaz wanted to fit in with Damascus. Don't be an Ahaz – be a Hezekiah.</p>
     </div>
@@ -138,15 +143,15 @@
   <div style="display:flex; justify-content:center; align-items:flex-start; gap:15px; flex-wrap:wrap; max-width:1000px; margin:0 auto;">
     <div style="flex:1; min-width:220px; max-width:300px;">
       <img src="https://i.pinimg.com/736x/b0/e2/21/b0e221cab540a3c881d6ff8b50b1d8e7.jpg" style="width:100%; border-radius:8px;" alt="Kings of Judah">
-      <p style="color:#aaa; font-size:0.5em;">Kings of Judah</p>
+      <p class="gc-context">Kings of Judah</p>
     </div>
     <div style="flex:1; min-width:220px; max-width:300px;">
       <img src="https://i.pinimg.com/1200x/52/0b/f9/520bf96601ea418a7a9ab64de34b16ee.jpg" style="width:100%; border-radius:8px;" alt="Kings timeline">
-      <p style="color:#aaa; font-size:0.5em;">Kings timeline</p>
+      <p class="gc-context">Kings timeline</p>
     </div>
     <div style="flex:1; min-width:220px; max-width:300px;">
       <img src="assets/12-tribes-of-israel.jpg" style="width:100%; border-radius:8px;" alt="12 Tribes">
-      <p style="color:#aaa; font-size:0.5em;">12 Tribes – Gen 49:28</p>
+      <p class="gc-context">12 Tribes – Gen 49:28</p>
     </div>
   </div>
   <p style="color:#ccc; font-size:0.6em; margin-top:10px;">2 Kings 16–25: Ahaz → Hezekiah → Manasseh → Josiah → Zedekiah</p>
@@ -170,7 +175,7 @@
 </section>
 <section>
   <h3 style="color:#4ade80; font-size:1.3em;">Q1 Answer: B. Hezekiah</h3>
-  <p style="color:#aaa; font-size:0.6em;">2 Kings 18:9-10</p>
+  <p class="gc-context">2 Kings 18:9-10</p>
   <div style="text-align:left; max-width:900px; margin:10px auto; font-size:0.58em; line-height:1.45; color:#ddd;">
     <p><strong style="color:#4ade80;">Why correct:</strong> Hezekiah was king of Judah in the 6th year of his reign when Samaria fell (722 BC). He trusted in the Lord unlike the kings of Israel – 2 Kings 18:5 says 'there was no one like him among all the kings of Judah.'</p>
     <div style="margin-top:10px; color:#ccc;">
@@ -206,11 +211,11 @@
 <!-- SLIDE 10: GC Quote – Holland -->
 <section data-background-color="#16213e">
   <div style="display:flex; align-items:center; gap:25px; max-width:900px; margin:0 auto;">
-    <img src="https://kutv.com/resources/media/37d2c4b6-60d4-40fe-b275-2998719e974b-JeffreyRHollandofficialportraitJune2018resized.jpg" style="width:140px; height:140px; border-radius:50%; object-fit:cover; border:3px solid #4ade80;" alt="Elder Jeffrey R. Holland">
+    <img src="https://kutv.com/resources/media/37d2c4b6-60d4-40fe-b275-2998719e974b-JeffreyRHollandofficialportraitJune2018resized.jpg" class="gc-speaker-img" style="border:3px solid #4ade80;" alt="Elder Jeffrey R. Holland">
     <div style="text-align:left;">
-      <p style="color:#ffd700; font-size:0.95em; font-style:italic;">"Faith means trusting God in good times and bad, even if that includes some suffering until we see His arm revealed in our behalf."</p>
-      <p style="color:#ccc; margin-top:8px; font-size:0.7em;">— Elder Jeffrey R. Holland<br>"Waiting on the Lord" • Oct 2020</p>
-      <p style="color:#aaa; font-size:0.65em; margin-top:6px;">Hezekiah was surrounded by an army. He prayed. God delivered.</p>
+      <p class="gc-quote">"Faith means trusting God in good times and bad, even if that includes some suffering until we see His arm revealed in our behalf."</p>
+      <p class="gc-attrib" style="margin-top:8px;">— Elder Jeffrey R. Holland<br>"Waiting on the Lord" • Oct 2020</p>
+      <p class="gc-context">Hezekiah was surrounded by an army. He prayed. God delivered.</p>
     </div>
   </div>
 </section>
@@ -234,7 +239,7 @@
 </section>
 <section>
   <h3 style="color:#4ade80; font-size:1.3em;">Q2 Answer: B. He copied a pagan altar from Damascus and placed it in the temple</h3>
-  <p style="color:#aaa; font-size:0.6em;">2 Kings 16:10-14</p>
+  <p class="gc-context">2 Kings 16:10-14</p>
   <div style="text-align:left; max-width:900px; margin:10px auto; font-size:0.58em; line-height:1.45; color:#ddd;">
     <p><strong style="color:#4ade80;">Why correct:</strong> Ahaz saw a pagan altar in Damascus, liked the design, sent the plans to Jerusalem, and had Uriah the priest build a copy – then moved God's bronze altar aside and put the pagan copy in its place in the temple courtyard.</p>
     <div style="margin-top:10px; color:#ccc;">
@@ -266,7 +271,7 @@
 </section>
 <section>
   <h3 style="color:#4ade80; font-size:1.3em;">Q3 Answer: C. Prayed to the Lord and sought Isaiah's counsel</h3>
-  <p style="color:#aaa; font-size:0.6em;">2 Kings 19:1-14</p>
+  <p class="gc-context">2 Kings 19:1-14</p>
   <div style="text-align:left; max-width:900px; margin:10px auto; font-size:0.58em; line-height:1.45; color:#ddd;">
     <p><strong style="color:#4ade80;">Why correct:</strong> Hezekiah tore his clothes (sign of humility), went into the temple to pray, and sent messengers to the prophet Isaiah asking him to pray too. He then spread Sennacherib's threatening letter before the Lord in the temple (2 Kings 19:14).</p>
     <div style="margin-top:10px; color:#ccc;">
@@ -284,11 +289,11 @@
 <!-- SLIDE 13: GC Quote – Nelson (prayer) -->
 <section data-background-color="#0f3460">
   <div style="display:flex; align-items:center; gap:25px; max-width:900px; margin:0 auto;">
-    <img src="https://www.churchofjesuschrist.org/imgs/57efa9db7ae0bb889d74594f5a694c413b4483de/full/3840%2C/0/default" style="width:140px; height:140px; border-radius:50%; object-fit:cover; border:3px solid #e94560;" alt="President Russell M. Nelson">
+    <img src="https://www.churchofjesuschrist.org/imgs/57efa9db7ae0bb889d74594f5a694c413b4483de/full/3840%2C/0/default" class="gc-speaker-img" style="border:3px solid #e94560;" alt="President Russell M. Nelson">
     <div style="text-align:left;">
-      <p style="color:#ffd700; font-size:0.95em; font-style:italic;">"Reach up to Him in faith."</p>
-      <p style="color:#ccc; margin-top:8px; font-size:0.7em;">— President Russell M. Nelson<br>"Drawing the Power of Jesus Christ into Our Lives" • Apr 2017</p>
-      <p style="color:#ddd; font-size:0.65em; margin-top:6px;">Hezekiah spread Sennacherib's letter before the Lord. He reached up. God reached down.</p>
+      <p class="gc-quote">"Reach up to Him in faith."</p>
+      <p class="gc-attrib" style="margin-top:8px;">— President Russell M. Nelson<br>"Drawing the Power of Jesus Christ into Our Lives" • Apr 2017</p>
+      <p class="gc-context">Hezekiah spread Sennacherib's letter before the Lord. He reached up. God reached down.</p>
     </div>
   </div>
 </section>
@@ -312,7 +317,7 @@
 </section>
 <section>
   <h3 style="color:#4ade80; font-size:1.3em;">Q4 Answer: B. An angel of the Lord struck down 185,000 Assyrian soldiers overnight</h3>
-  <p style="color:#aaa; font-size:0.6em;">2 Kings 19:35</p>
+  <p class="gc-context">2 Kings 19:35</p>
   <div style="text-align:left; max-width:900px; margin:10px auto; font-size:0.58em; line-height:1.45; color:#ddd;">
     <p><strong style="color:#4ade80;">Why correct:</strong> "That night the angel of the Lord went out and put to death a hundred and eighty-five thousand in the Assyrian camp. When the people got up the next morning—there were all the dead bodies!" – 2 Kings 19:35 NIV. Sennacherib went home humiliated and was later assassinated by his own sons.</p>
     <div style="margin-top:10px; color:#ccc;">
@@ -344,7 +349,7 @@
 </section>
 <section>
   <h3 style="color:#4ade80; font-size:1.3em;">Q5 Answer: B. The shadow moved backward ten steps on the sundial</h3>
-  <p style="color:#aaa; font-size:0.6em;">2 Kings 20:9-11</p>
+  <p class="gc-context">2 Kings 20:9-11</p>
   <div style="text-align:left; max-width:900px; margin:10px auto; font-size:0.58em; line-height:1.45; color:#ddd;">
     <p><strong style="color:#4ade80;">Why correct:</strong> Isaiah offered Hezekiah a choice: should the shadow go forward 10 steps (normal) or backward 10 steps (impossible)? Hezekiah chose backward – harder to believe, so a stronger sign. God made the shadow go BACKWARD ten steps on Ahaz's sundial. Hezekiah was healed and lived 15 more years.</p>
     <div style="margin-top:10px; color:#ccc;">
@@ -362,11 +367,11 @@
 <!-- SLIDE 16: GC Quote – Nelson (scriptures) -->
 <section data-background-color="#16213e">
   <div style="display:flex; align-items:center; gap:25px; max-width:900px; margin:0 auto;">
-    <img src="https://www.churchofjesuschrist.org/imgs/57efa9db7ae0bb889d74594f5a694c413b4483de/full/3840%2C/0/default" style="width:140px; height:140px; border-radius:50%; object-fit:cover; border:3px solid #ffd700;" alt="President Russell M. Nelson">
+    <img src="https://www.churchofjesuschrist.org/imgs/57efa9db7ae0bb889d74594f5a694c413b4483de/full/3840%2C/0/default" class="gc-speaker-img" style="border:3px solid #ffd700;" alt="President Russell M. Nelson">
     <div style="text-align:left;">
-      <p style="color:#ffd700; font-size:0.85em; font-style:italic;">"The truths of the Book of Mormon have the power to heal, comfort, restore, succor, strengthen, console, and cheer our souls."</p>
-      <p style="color:#ccc; margin-top:8px; font-size:0.7em;">— President Russell M. Nelson<br>"The Book of Mormon: What Would Your Life Be Like without It?" • Oct 2017</p>
-      <p style="color:#ddd; font-size:0.65em; margin-top:6px;">Josiah found one lost book – it changed a nation. What could daily scripture study do for you?</p>
+      <p class="gc-quote">"The truths of the Book of Mormon have the power to heal, comfort, restore, succor, strengthen, console, and cheer our souls."</p>
+      <p class="gc-attrib" style="margin-top:8px;">— President Russell M. Nelson<br>"The Book of Mormon: What Would Your Life Be Like without It?" • Oct 2017</p>
+      <p class="gc-context">Josiah found one lost book – it changed a nation. What could daily scripture study do for you?</p>
     </div>
   </div>
 </section>
@@ -390,7 +395,7 @@
 </section>
 <section>
   <h3 style="color:#4ade80; font-size:1.3em;">Q6 Answer: B. Manasseh</h3>
-  <p style="color:#aaa; font-size:0.6em;">2 Kings 21:1-9</p>
+  <p class="gc-context">2 Kings 21:1-9</p>
   <div style="text-align:left; max-width:900px; margin:10px auto; font-size:0.58em; line-height:1.45; color:#ddd;">
     <p><strong style="color:#4ade80;">Why correct:</strong> Manasseh reigned 55 years in Jerusalem – the longest reign of any king of Judah – and 'did evil in the eyes of the Lord, following the detestable practices of the nations' (2 Kings 21:2). He rebuilt the high places his father Hezekiah had destroyed, erected altars to Baal, and even sacrificed his own son.</p>
     <div style="margin-top:10px; color:#ccc;">
@@ -422,7 +427,7 @@
 </section>
 <section>
   <h3 style="color:#4ade80; font-size:1.3em;">Q7 Answer: C. Tore his clothes in repentance and renewed the covenant</h3>
-  <p style="color:#aaa; font-size:0.6em;">2 Kings 22:11, 23:1-3</p>
+  <p class="gc-context">2 Kings 22:11, 23:1-3</p>
   <div style="text-align:left; max-width:900px; margin:10px auto; font-size:0.58em; line-height:1.45; color:#ddd;">
     <p><strong style="color:#4ade80;">Why correct:</strong> When Shaphan the scribe read the Book of the Law to Josiah, 'he tore his robes' – a sign of deep grief and repentance. He realized how far Judah had strayed from God's word. He then gathered all the people, read the entire Book of the Covenant aloud, and renewed the covenant before the Lord.</p>
     <div style="margin-top:10px; color:#ccc;">
@@ -440,10 +445,10 @@
 <!-- SLIDE 19: GC Quote – Monson -->
 <section data-background-color="#0f3460">
   <div style="display:flex; align-items:center; gap:25px; max-width:900px; margin:0 auto;">
-    <img src="https://www.churchofjesuschrist.org/bc/content/shared/content/images/leaders/thomas-s-monson-large.jpg" style="width:140px; height:140px; border-radius:50%; object-fit:cover; border:3px solid #4ade80;" alt="President Thomas S. Monson">
+    <img src="https://www.churchofjesuschrist.org/bc/content/shared/content/images/leaders/thomas-s-monson-large.jpg" class="gc-speaker-img" style="border:3px solid #4ade80;" alt="President Thomas S. Monson">
     <div style="text-align:left;">
-      <p style="color:#ffd700; font-size:0.95em; font-style:italic;">"I implore each of us to prayerfully study and ponder the Book of Mormon each day."</p>
-      <p style="color:#ccc; margin-top:8px; font-size:0.7em;">— President Thomas S. Monson<br>"The Power of the Book of Mormon" • Apr 2017</p>
+      <p class="gc-quote">"I implore each of us to prayerfully study and ponder the Book of Mormon each day."</p>
+      <p class="gc-attrib" style="margin-top:8px;">— President Thomas S. Monson<br>"The Power of the Book of Mormon" • Apr 2017</p>
     </div>
   </div>
 </section>
@@ -467,7 +472,7 @@
 </section>
 <section>
   <h3 style="color:#4ade80; font-size:1.3em;">Q8 Answer: B. The greatest Passover since the days of the judges</h3>
-  <p style="color:#aaa; font-size:0.6em;">2 Kings 23:21-23</p>
+  <p class="gc-context">2 Kings 23:21-23</p>
   <div style="text-align:left; max-width:900px; margin:10px auto; font-size:0.58em; line-height:1.45; color:#ddd;">
     <p><strong style="color:#4ade80;">Why correct:</strong> "Neither before nor after Josiah was there a king like him who turned to the Lord as he did – with all his heart and with all his soul and with all his strength" (2 Kings 23:25). His Passover was the greatest since the days of the judges – roughly 600+ years, going back to Samuel's time.</p>
     <div style="margin-top:10px; color:#ccc;">
@@ -499,7 +504,7 @@
 </section>
 <section>
   <h3 style="color:#4ade80; font-size:1.3em;">Q9 Answer: B. Continued idolatry and rejecting God's prophets</h3>
-  <p style="color:#aaa; font-size:0.6em;">2 Kings 24:2-4, 25</p>
+  <p class="gc-context">2 Kings 24:2-4, 25</p>
   <div style="text-align:left; max-width:900px; margin:10px auto; font-size:0.58em; line-height:1.45; color:#ddd;">
     <p><strong style="color:#4ade80;">Why correct:</strong> "Surely these things happened to Judah according to the Lord's command, in order to remove them from his presence because of the sins of Manasseh and all he had done, including the shedding of innocent blood" (2 Kings 24:3-4). God sent prophet after prophet – Isaiah, Jeremiah, and more – for generations. Judah refused to listen. After repeated warnings, judgment came through Babylon under Nebuchadnezzar.</p>
     <div style="margin-top:10px; color:#ccc;">
@@ -517,11 +522,11 @@
 <!-- SLIDE 22: GC Quote – de Feo -->
 <section data-background-color="#532e1c">
   <div style="display:flex; align-items:center; gap:25px; max-width:900px; margin:0 auto;">
-    <img src="https://news-ie.churchofjesuschrist.org/media/960x1280/Massimo-De-Feo-APy2019.jpg" style="width:140px; height:140px; border-radius:50%; object-fit:cover; border:3px solid #ffd700;" alt="Elder Massimo de Feo">
+    <img src="https://news-ie.churchofjesuschrist.org/media/960x1280/Massimo-De-Feo-APy2019.jpg" class="gc-speaker-img" style="border:3px solid #ffd700;" alt="Elder Massimo de Feo">
     <div style="text-align:left;">
-      <p style="color:#ffd700; font-size:0.75em; font-style:italic;">"we keep a clear spiritual vision when we leave the natural man behind, repent, and begin a new life in Christ.<br><br>The way to do it is by making and keeping covenants to rise to a better life through Jesus Christ."</p>
-      <p style="color:#ccc; margin-top:8px; font-size:0.7em;">— Elder Massimo de Feo<br>"Rise! He Calleth Thee" • Apr 2024</p>
-      <p style="color:#ddd; font-size:0.6em; margin-top:6px;">Judah ignored prophets for generations. Don't wait until the walls fall. Repent now.</p>
+      <p class="gc-quote">"we keep a clear spiritual vision when we leave the natural man behind, repent, and begin a new life in Christ.<br><br>The way to do it is by making and keeping covenants to rise to a better life through Jesus Christ."</p>
+      <p class="gc-attrib" style="margin-top:8px;">— Elder Massimo de Feo<br>"Rise! He Calleth Thee" • Apr 2024</p>
+      <p class="gc-context">Judah ignored prophets for generations. Don't wait until the walls fall. Repent now.</p>
     </div>
   </div>
 </section>
@@ -545,7 +550,7 @@
 </section>
 <section>
   <h3 style="color:#4ade80; font-size:1.3em;">Q10 Answer: B. The poorest people, under Gedaliah as governor</h3>
-  <p style="color:#aaa; font-size:0.6em;">2 Kings 25:12, 22</p>
+  <p class="gc-context">2 Kings 25:12, 22</p>
   <div style="text-align:left; max-width:900px; margin:10px auto; font-size:0.58em; line-height:1.45; color:#ddd;">
     <p><strong style="color:#4ade80;">Why correct:</strong> Nebuchadnezzar 'left behind some of the poorest people of the land to work the vineyards and fields' (2 Kings 25:12) and appointed Gedaliah son of Ahikam as governor over them at Mizpah (2 Kings 25:22). Even in judgment, God preserved a remnant.</p>
     <div style="margin-top:10px; color:#ccc;">
@@ -563,11 +568,11 @@
 <!-- SLIDE 24: GC Quote – Andersen (hope) -->
 <section data-background-color="#0f3460">
   <div style="display:flex; align-items:center; gap:25px; max-width:900px; margin:0 auto;">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Neil_L._Andersen_April_2019.jpg" style="width:140px; height:140px; border-radius:50%; object-fit:cover; border:3px solid #4ade80;" alt="Elder Neil L. Andersen">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Neil_L._Andersen_April_2019.jpg" class="gc-speaker-img" style="border:3px solid #4ade80;" alt="Elder Neil L. Andersen">
     <div style="text-align:left;">
-      <p style="color:#ffd700; font-size:0.85em; font-style:italic;">"The Book of Mormon is a powerful witness of Jesus Christ. Virtually every page testifies of the Savior and His divine mission."</p>
-      <p style="color:#ccc; margin-top:8px; font-size:0.7em;">— Elder Neil L. Andersen<br>"We Talk of Christ" • Oct 2020</p>
-      <p style="color:#ddd; font-size:0.65em; margin-top:6px;">Even after Jerusalem fell, God didn't abandon His people. Christ is the hope – then and now.</p>
+      <p class="gc-quote">"The Book of Mormon is a powerful witness of Jesus Christ. Virtually every page testifies of the Savior and His divine mission."</p>
+      <p class="gc-attrib" style="margin-top:8px;">— Elder Neil L. Andersen<br>"We Talk of Christ" • Oct 2020</p>
+      <p class="gc-context">Even after Jerusalem fell, God didn't abandon His people. Christ is the hope – then and now.</p>
     </div>
   </div>
 </section>
