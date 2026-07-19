@@ -4,6 +4,28 @@ from datetime import datetime
 from collections import Counter
 
 st.set_page_config(page_title="Sunday School", layout="wide", page_icon="📖")
+import streamlit as st
+
+st.html(
+    """
+    <style>
+    hr {
+        border: none !important;
+        height: 0 !important;
+        display: none !important;
+    }
+    .stMarkdownContainer hr {
+        display: none !important;
+    }
+    </style>
+    """
+)
+
+# 2. Your existing code that reads and shows the .md file
+with open("your_file.md", "r") as f:
+    markdown_content = f.read()
+
+st.markdown(markdown_content)
 
 # --- Global CSS: bigger quiz fonts, slide depth, remove dotted lines ---
 st.markdown("""
