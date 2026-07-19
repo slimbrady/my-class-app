@@ -49,13 +49,15 @@ hr, .slide-header::after { display:none !important; content:none !important; }
 
 .reveal .slides section { padding: 15px 30px !important; }
 </style>
+import streamlit as st
+st.write(st.__version__)
 
 <!-- SLIDE 1: Title -->
 <section data-background-image="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1600" data-background-opacity="0.3" data-background-color="#1a1a2e">
   <h1>2 Kings 16–25</h1>
   <h2 style="color: #e94560;">Faithful Kings • Fallen Kingdom</h2>
   <p style="color: #cccccc;">Ahaz • Hezekiah • Manasseh • Josiah • Babylon</p>
-  <p class="gc-context">👆 Arrow keys to advance • ⬇️ Down for quiz answers</p>
+  <p class="gc-context" Arrow keys to advance • ⬇️ Down for quiz answers</p>
 </section>
 
 ---
