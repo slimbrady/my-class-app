@@ -8,17 +8,40 @@
   3. Russell M. Nelson – "Drawing the Power of Jesus Christ into Our Lives" – Apr 2017
   4. Russell M. Nelson – "The Book of Mormon: What Would Your Life Be Like without It?" – Oct 2017
   5. Thomas S. Monson – "The Power of the Book of Mormon" – Apr 2017
-  6. Brent H. Nielson – Apr 2024
+  6. Massimo de Feo – "Rise! He Calleth Thee" – Apr 2024
   7. Neil L. Andersen – "We Talk of Christ" – Oct 2020
   
-  SPEAKER PHOTOS – CURRENTLY UNSPLASH PLACEHOLDERS
-  Replace with official portraits from Church Media Library:
-  - Neil L. Andersen: https://www.churchofjesuschrist.org/media/image/neil-l-andersen-official-portrait-2019-6e461e0
-  - Jeffrey R. Holland: https://www.churchofjesuschrist.org/media/image/official-portrait-jeffrey-holland-2018-bae6198
-  - Russell M. Nelson: https://www.churchofjesuschrist.org/media/image/russell-nelson-official-portrait-2018-57efa9d
-  - Thomas S. Monson: https://www.churchofjesuschrist.org/media/image/thomas-s-monson-knud-edsberg-7baa22e
-  Download from the Church Media Library and host locally, then update <img src> tags.
+  SPEAKER PHOTOS – from spreadsheet at https://docs.google.com/spreadsheets/d/1lw-3HGs5KCoPRjU8uJtXLZgCsxyo0pHPJe0U3eCi-Us/
+  - Neil L. Andersen: https://upload.wikimedia.org/wikipedia/commons/8/8e/Neil_L._Andersen_April_2019.jpg
+  - Jeffrey R. Holland: https://kutv.com/resources/media/37d2c4b6-60d4-40fe-b275-2998719e974b-JeffreyRHollandofficialportraitJune2018resized.jpg
+  - Russell M. Nelson: https://www.churchofjesuschrist.org/imgs/57efa9db7ae0bb889d74594f5a694c413b4483de/full/3840%2C/0/default
+  - Thomas S. Monson: https://www.churchofjesuschrist.org/bc/content/shared/content/images/leaders/thomas-s-monson-large.jpg
+  - Massimo de Feo: https://news-ie.churchofjesuschrist.org/media/960x1280/Massimo-De-Feo-APy2019.jpg
 -->
+
+<style>
+/* Bigger quiz fonts */
+.reveal h3 { font-size: 2.1em !important; }
+.reveal li, .reveal ul li { font-size: 1.35em !important; line-height: 1.55 !important; }
+.reveal p { font-size: 1.15em; }
+
+/* Remove any dotted line at the top */
+.reveal .slide-header::after,
+.reveal .slides section::before,
+.reveal .slides section::after {
+  display: none !important;
+  content: none !important;
+  border: none !important;
+}
+
+/* Slide depth / indentation */
+.reveal .slides section {
+  padding-left: 2.2rem !important;
+  box-shadow: -8px 0 28px rgba(0,0,0,0.18), inset 6px 0 0 rgba(14,165,185,0.22) !important;
+  border-radius: 14px !important;
+  background-clip: padding-box;
+}
+</style>
 
 <!-- SLIDE 1: Title -->
 <section data-background-image="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1600" data-background-opacity="0.3" data-background-color="#1a1a2e">
@@ -49,7 +72,7 @@
 <!-- SLIDE 3: GC Quote 1 – peer pressure / following the world -->
 <section data-background-color="#0f3460">
   <div style="display:flex; align-items:center; gap:30px; max-width:950px; margin:0 auto;">
-    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=250" style="width:180px; height:180px; border-radius:50%; object-fit:cover; border:4px solid #e94560;" alt="Elder Neil L. Andersen">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Neil_L._Andersen_April_2019.jpg" style="width:180px; height:180px; border-radius:50%; object-fit:cover; border:4px solid #e94560;" alt="Elder Neil L. Andersen">
     <div style="text-align:left;">
       <p style="color:#ffd700; font-size:1.3em; font-style:italic;">"We care more about being His followers than being 'liked' by our own followers."</p>
       <p style="color:#ccc; margin-top:15px;">— Elder Neil L. Andersen<br><span style="font-size:0.8em; color:#aaa;">"We Talk of Christ" • October 2020 General Conference</span></p>
@@ -102,7 +125,7 @@
 <!-- SLIDE 6: GC Quote 2 – Trusting God (Hezekiah) -->
 <section data-background-color="#16213e">
   <div style="display:flex; align-items:center; gap:30px; max-width:950px; margin:0 auto;">
-    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=250" style="width:180px; height:180px; border-radius:50%; object-fit:cover; border:4px solid #4ade80;" alt="Elder Jeffrey R. Holland">
+    <img src="https://kutv.com/resources/media/37d2c4b6-60d4-40fe-b275-2998719e974b-JeffreyRHollandofficialportraitJune2018resized.jpg" style="width:180px; height:180px; border-radius:50%; object-fit:cover; border:4px solid #4ade80;" alt="Elder Jeffrey R. Holland">
     <div style="text-align:left;">
       <p style="color:#ffd700; font-size:1.2em; font-style:italic;">"Faith means trusting God in good times and bad, even if that includes some suffering until we see His arm revealed in our behalf."</p>
       <p style="color:#ccc; margin-top:15px;">— Elder Jeffrey R. Holland<br><span style="font-size:0.8em; color:#aaa;">"Waiting on the Lord" • October 2020 General Conference</span></p>
@@ -150,7 +173,7 @@
 <!-- SLIDE 9: GC Quote 3 – Prayer / drawing power from Christ -->
 <section data-background-color="#0f3460">
   <div style="display:flex; align-items:center; gap:30px; max-width:950px; margin:0 auto;">
-    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=250" style="width:180px; height:180px; border-radius:50%; object-fit:cover; border:4px solid #e94560;" alt="President Russell M. Nelson">
+    <img src="https://www.churchofjesuschrist.org/imgs/57efa9db7ae0bb889d74594f5a694c413b4483de/full/3840%2C/0/default" style="width:180px; height:180px; border-radius:50%; object-fit:cover; border:4px solid #e94560;" alt="President Russell M. Nelson">
     <div style="text-align:left;">
       <p style="color:#ffd700; font-size:1.15em; font-style:italic;">"Reach up to Him in faith."</p>
       <p style="color:#ccc; margin-top:10px;">— President Russell M. Nelson<br><span style="font-size:0.8em; color:#aaa;">"Drawing the Power of Jesus Christ into Our Lives" • April 2017 General Conference</span></p>
@@ -195,7 +218,7 @@
 <!-- SLIDE 12: GC Quote 4 – Scriptures / Josiah finding the Book -->
 <section data-background-color="#16213e">
   <div style="display:flex; align-items:center; gap:30px; max-width:950px; margin:0 auto;">
-    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=250" style="width:180px; height:180px; border-radius:50%; object-fit:cover; border:4px solid #ffd700;" alt="President Russell M. Nelson">
+    <img src="https://www.churchofjesuschrist.org/imgs/57efa9db7ae0bb889d74594f5a694c413b4483de/full/3840%2C/0/default" style="width:180px; height:180px; border-radius:50%; object-fit:cover; border:4px solid #ffd700;" alt="President Russell M. Nelson">
     <div style="text-align:left;">
       <p style="color:#ffd700; font-size:1.1em; font-style:italic;">"The truths of the Book of Mormon have the power to heal, comfort, restore, succor, strengthen, console, and cheer our souls."</p>
       <p style="color:#ccc; margin-top:15px;">— President Russell M. Nelson<br><span style="font-size:0.8em; color:#aaa;">"The Book of Mormon: What Would Your Life Be Like without It?" • October 2017 General Conference</span></p>
@@ -211,13 +234,13 @@
 
 <!-- SLIDE 13: Quiz Q6 – Manasseh -->
 <section data-background-gradient="radial-gradient(#2c1a1a, #1a1a1a)">
-  <h3 style="color: white;">Q6: Which king reigned 55 years and did much evil?</h3>
+  <h3 style="color: white;">Q6: Which king reigned the longest and did much evil?</h3>
   <p style="color: #aaa;">2 Kings 21:1-9</p>
   <ul style="color: white; text-align:left; max-width:600px; margin:20px auto;">
-    <li>A: Josiah – 31 years</li>
-    <li>B: Manasseh – 55 years <span class="fragment" data-fragment-index="1" style="color:#4ade80;">✅</span></li>
-    <li>C: Hezekiah – 29 years</li>
-    <li>D: Zedekiah – 11 years</li>
+    <li>A: Josiah</li>
+    <li>B: Manasseh <span class="fragment" data-fragment-index="1" style="color:#4ade80;">✅</span></li>
+    <li>C: Hezekiah</li>
+    <li>D: Zedekiah</li>
   </ul>
   <p class="fragment" data-fragment-index="1" style="color:#ff9999; margin-top:10px;">Longest reign in Judah – and the most wicked. Length ≠ faithfulness.</p>
 </section>
@@ -241,7 +264,7 @@
 <!-- SLIDE 15: GC Quote 5 – Daily scripture study -->
 <section data-background-color="#0f3460">
   <div style="display:flex; align-items:center; gap:30px; max-width:950px; margin:0 auto;">
-    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=250" style="width:180px; height:180px; border-radius:50%; object-fit:cover; border:4px solid #4ade80;" alt="President Thomas S. Monson">
+    <img src="https://www.churchofjesuschrist.org/bc/content/shared/content/images/leaders/thomas-s-monson-large.jpg" style="width:180px; height:180px; border-radius:50%; object-fit:cover; border:4px solid #4ade80;" alt="President Thomas S. Monson">
     <div style="text-align:left;">
       <p style="color:#ffd700; font-size:1.15em; font-style:italic;">"I implore each of us to prayerfully study and ponder the Book of Mormon each day."</p>
       <p style="color:#ccc; margin-top:15px;">— President Thomas S. Monson<br><span style="font-size:0.8em; color:#aaa;">"The Power of the Book of Mormon" • April 2017 General Conference</span></p>
@@ -283,10 +306,10 @@
 <!-- SLIDE 18: GC Quote 6 – Repentance / heeding prophets -->
 <section data-background-color="#532e1c">
   <div style="display:flex; align-items:center; gap:30px; max-width:950px; margin:0 auto;">
-    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=250" style="width:180px; height:180px; border-radius:50%; object-fit:cover; border:4px solid #ffd700;" alt="Elder Brent H. Nielson">
+    <img src="https://news-ie.churchofjesuschrist.org/media/960x1280/Massimo-De-Feo-APy2019.jpg" style="width:180px; height:180px; border-radius:50%; object-fit:cover; border:4px solid #ffd700;" alt="Elder Massimo de Feo">
     <div style="text-align:left;">
-      <p style="color:#ffd700; font-size:1.15em; font-style:italic;">"Leave the natural man behind, repent, and begin a new life in Christ."</p>
-      <p style="color:#ccc; margin-top:15px;">— Elder Brent H. Nielson<br><span style="font-size:0.8em; color:#aaa;">April 2024 General Conference</span></p>
+      <p style="color:#ffd700; font-size:1.15em; font-style:italic;">"we keep a clear spiritual vision when we leave the natural man behind, repent, and begin a new life in Christ.<br><br>The way to do it is by making and keeping covenants to rise to a better life through Jesus Christ."</p>
+      <p style="color:#ccc; margin-top:15px;">— Elder Massimo de Feo<br><span style="font-size:0.8em; color:#aaa;">"Rise! He Calleth Thee" • April 2024 General Conference</span></p>
       <details style="margin-top:12px; color:#ddd; font-size:0.75em;">
         <summary style="cursor:pointer; color:#ffd700;">⚠️ What Judah got wrong</summary>
         <p style="margin-top:8px;">Judah had prophet after prophet warn them – Isaiah, Jeremiah, and more. They ignored them for generations. Don't wait until the walls fall. Repent now.</p>
@@ -314,7 +337,7 @@
 <!-- SLIDE 20: GC Quote 7 – Christ / hope even after failure -->
 <section data-background-color="#0f3460">
   <div style="display:flex; align-items:center; gap:30px; max-width:950px; margin:0 auto;">
-    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=250" style="width:180px; height:180px; border-radius:50%; object-fit:cover; border:4px solid #4ade80;" alt="Elder Neil L. Andersen">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Neil_L._Andersen_April_2019.jpg" style="width:180px; height:180px; border-radius:50%; object-fit:cover; border:4px solid #4ade80;" alt="Elder Neil L. Andersen">
     <div style="text-align:left;">
       <p style="color:#ffd700; font-size:1.1em; font-style:italic;">"The Book of Mormon is a powerful witness of Jesus Christ. Virtually every page testifies of the Savior and His divine mission."</p>
       <p style="color:#ccc; margin-top:15px;">— Elder Neil L. Andersen<br><span style="font-size:0.8em; color:#aaa;">"We Talk of Christ" • October 2020 General Conference</span></p>
@@ -353,5 +376,5 @@
   Nelson – "Drawing the Power of Jesus Christ into Our Lives" – Apr 2017<br>
   Nelson – "The Book of Mormon: What Would Your Life Be Like without It?" – Oct 2017<br>
   Monson – "The Power of the Book of Mormon" – Apr 2017<br>
-  Nielson – Apr 2024</p>
+  de Feo – "Rise! He Calleth Thee" – Apr 2024</p>
 </section>
