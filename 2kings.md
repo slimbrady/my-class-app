@@ -51,7 +51,59 @@
 
 ---
 
-<!-- SLIDE 2: Ahaz intro with image -->
+<!-- SLIDE 2: Review – 1 & 2 Samuel -->
+<section data-background-color="#1a1a2e">
+  <h2 style="color:#e94560;">Review: 1 & 2 Samuel</h2>
+  <div style="display:flex; align-items:center; gap:30px; max-width:1000px; margin:20px auto;">
+    <img src="assets/12-tribes-of-israel.jpg" style="width:340px; border-radius:12px; box-shadow: 0 8px 24px rgba(0,0,0,0.5);" alt="The 12 Tribes of Israel">
+    <div style="text-align:left; color:#ddd;">
+      <h3 style="color:#ffd700;">From Tribes to a Kingdom</h3>
+      <ul style="font-size:0.9em; line-height:1.6;">
+        <li><strong>1 Samuel:</strong> Samuel the prophet • Saul anointed as Israel's first king • David defeats Goliath</li>
+        <li><strong>2 Samuel:</strong> David becomes king • Jerusalem made capital • God's covenant with David – his throne established forever</li>
+      </ul>
+      <p style="color:#aaa; font-size:0.75em; margin-top:15px;">The 12 Tribes of Israel – descendants of Jacob – united under Saul, then David</p>
+    </div>
+  </div>
+</section>
+
+---
+
+<!-- SLIDE 3: Review – 1 Kings -->
+<section data-background-color="#16213e">
+  <h2 style="color:#e94560;">Review: 1 Kings</h2>
+  <div style="display:flex; align-items:center; gap:30px; max-width:1000px; margin:20px auto; flex-wrap:wrap; justify-content:center;">
+    <div>
+      <img src="https://i.pinimg.com/736x/b0/e2/21/b0e221cab540a3c881d6ff8b50b1d8e7.jpg" style="width:280px; border-radius:10px; box-shadow: 0 6px 20px rgba(0,0,0,0.4);" alt="Kings of Judah timeline">
+    </div>
+    <div style="text-align:left; color:#ddd; max-width:520px;">
+      <h3 style="color:#ffd700;">Solomon → Divided Kingdom</h3>
+      <ul style="font-size:0.9em; line-height:1.6;">
+        <li><strong>Solomon:</strong> wisdom, builds the temple in Jerusalem</li>
+        <li><strong>Kingdom divides:</strong> Rehoboam (Judah – south) vs. Jeroboam (Israel – north)</li>
+        <li><strong>Elijah:</strong> confronts Ahab & Jezebel, Mt. Carmel – "How long halt ye between two opinions?"</li>
+        <li>Northern kingdom (Israel) spirals into idolatry – 19 bad kings in a row, zero righteous</li>
+      </ul>
+      <p style="color:#aaa; font-size:0.75em; margin-top:12px;">1 Kings sets the stage for 2 Kings: two kingdoms drifting from God, prophets calling them back</p>
+    </div>
+  </div>
+</section>
+
+---
+
+<!-- SLIDE 4: 2 Kings Overview -->
+<section data-background-color="#0f0f1e">
+  <h2 style="color:#e94560; margin-bottom:10px;">2 Kings – The Fall and the Promise</h2>
+  <p style="color:#aaa; font-size:0.7em; margin-bottom:10px;">Click image to view full size • Scroll to zoom</p>
+  <div style="max-width:900px; margin:0 auto; max-height:72vh; overflow:auto; border-radius:12px; box-shadow: 0 8px 30px rgba(0,0,0,0.5);">
+    <img src="assets/2kings-overview.jpg" style="width:100%; border-radius:12px;" alt="2 Kings – The Fall and the Promise – Overview, Structure, Key People, Key Places">
+  </div>
+  <p style="color:#888; font-size:0.6em; margin-top:8px;">Author: traditionally Jeremiah • Written ~560–540 BC (Babylonian exile) • Theme: God's justice brings judgment, His mercy brings hope</p>
+</section>
+
+---
+
+<!-- SLIDE 5: Ahaz intro with image -->
 <section data-background-gradient="linear-gradient(135deg, #2c1a1a, #1a1a2e)">
   <div style="display:flex; align-items:center; gap:30px; max-width:1000px; margin:0 auto;">
     <img src="https://i0.wp.com/christianpublishinghouse.co/wp-content/uploads/2026/01/Altar-King-Ahaz-Built-in-Damascus.jpg?w=1200&ssl=1" style="width:350px; border-radius:12px; box-shadow: 0 8px 24px rgba(0,0,0,0.5);" alt="Altar King Ahaz built in Damascus">
@@ -67,7 +119,7 @@
 
 ---
 
-<!-- SLIDE 3: GC Quote 1 – peer pressure / following the world -->
+<!-- SLIDE 6: GC Quote 1 – peer pressure / following the world -->
 <section data-background-color="#0f3460">
   <div style="display:flex; align-items:center; gap:30px; max-width:950px; margin:0 auto;">
     <img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Neil_L._Andersen_April_2019.jpg" style="width:180px; height:180px; border-radius:50%; object-fit:cover; border:4px solid #e94560;" alt="Elder Neil L. Andersen">
@@ -84,7 +136,7 @@
 
 ---
 
-<!-- SLIDE 4: Kings Timeline Diagrams -->
+<!-- SLIDE 7: Kings Timeline Diagrams -->
 <section data-background-color="#1a1a2e">
   <h2 style="color:#e94560; margin-bottom:20px;">Kings of Israel & Judah</h2>
   <div style="display:flex; justify-content:center; align-items:flex-start; gap:20px; flex-wrap:wrap; max-width:1100px; margin:0 auto;">
@@ -106,7 +158,7 @@
 
 ---
 
-<!-- SLIDE 5: Quiz Q1 – Hezekiah -->
+<!-- SLIDE 8: Quiz Q1 – Hezekiah -->
 <section data-background-gradient="radial-gradient(#1a1a2e, #16213e)">
   <h3 style="color: white;">Q1: Who was king of Judah when Israel fell to Assyria?</h3>
   <p style="color: #aaa;">2 Kings 18:9-10</p>
@@ -124,7 +176,7 @@
 
 ---
 
-<!-- SLIDE 5: Hezekiah vs Sennacherib – interactive -->
+<!-- SLIDE 9: Hezekiah vs Sennacherib – interactive -->
 <section data-background-image="https://images.unsplash.com/photo-1509316785289-025f5b846b35?w=1600" data-background-opacity="0.25" data-background-color="#1a1a2e">
   <h2 style="color:#e94560;">Hezekiah vs. Sennacherib</h2>
   <p style="color:#ddd;">2 Kings 18–19</p>
@@ -142,7 +194,7 @@
 
 ---
 
-<!-- SLIDE 6: GC Quote 2 – Trusting God (Hezekiah) -->
+<!-- SLIDE 10: GC Quote 2 – Trusting God (Hezekiah) -->
 <section data-background-color="#16213e">
   <div style="display:flex; align-items:center; gap:30px; max-width:950px; margin:0 auto;">
     <img src="https://kutv.com/resources/media/37d2c4b6-60d4-40fe-b275-2998719e974b-JeffreyRHollandofficialportraitJune2018resized.jpg" style="width:180px; height:180px; border-radius:50%; object-fit:cover; border:4px solid #4ade80;" alt="Elder Jeffrey R. Holland">
@@ -159,7 +211,7 @@
 
 ---
 
-<!-- SLIDE 7: Quiz Q2 – Ahaz -->
+<!-- SLIDE 11: Quiz Q2 – Ahaz -->
 <section data-background-gradient="radial-gradient(#2c1a1a, #1a1a2e)">
   <h3 style="color: white;">Q2: What did King Ahaz do that displeased the Lord?</h3>
   <p style="color: #aaa;">2 Kings 16:10-14</p>
@@ -176,7 +228,7 @@
 
 ---
 
-<!-- SLIDE 8: Quiz Q3 – Hezekiah prays -->
+<!-- SLIDE 12: Quiz Q3 – Hezekiah prays -->
 <section data-background-gradient="radial-gradient(#1a1a2e, #16213e)">
   <h3 style="color: white;">Q3: When Assyria surrounded Jerusalem, what did Hezekiah do?</h3>
   <p style="color: #aaa;">2 Kings 19:1-14</p>
@@ -190,7 +242,7 @@
 
 ---
 
-<!-- SLIDE 9: GC Quote 3 – Prayer / drawing power from Christ -->
+<!-- SLIDE 13: GC Quote 3 – Prayer / drawing power from Christ -->
 <section data-background-color="#0f3460">
   <div style="display:flex; align-items:center; gap:30px; max-width:950px; margin:0 auto;">
     <img src="https://www.churchofjesuschrist.org/imgs/57efa9db7ae0bb889d74594f5a694c413b4483de/full/3840%2C/0/default" style="width:180px; height:180px; border-radius:50%; object-fit:cover; border:4px solid #e94560;" alt="President Russell M. Nelson">
@@ -204,7 +256,7 @@
 
 ---
 
-<!-- SLIDE 10: Quiz Q4 – Angel delivers Jerusalem -->
+<!-- SLIDE 14: Quiz Q4 – Angel delivers Jerusalem -->
 <section data-background-image="https://images.unsplash.com/photo-1478131143081-828e3c7c5f4c?w=1600" data-background-opacity="0.2" data-background-color="#0a0a1a">
   <h3 style="color: white;">Q4: How was Jerusalem delivered from Sennacherib?</h3>
   <p style="color: #aaa;">2 Kings 19:35</p>
@@ -218,7 +270,7 @@
 
 ---
 
-<!-- SLIDE 11: Quiz Q5 – Hezekiah's sundial -->
+<!-- SLIDE 15: Quiz Q5 – Hezekiah's sundial -->
 <section data-background-gradient="radial-gradient(#1a1a2e, #2a1a3a)">
   <h3 style="color: white;">Q5: What sign did God give Hezekiah that he would recover?</h3>
   <p style="color: #aaa;">2 Kings 20:9-11</p>
@@ -235,7 +287,7 @@
 
 ---
 
-<!-- SLIDE 12: GC Quote 4 – Scriptures / Josiah finding the Book -->
+<!-- SLIDE 16: GC Quote 4 – Scriptures / Josiah finding the Book -->
 <section data-background-color="#16213e">
   <div style="display:flex; align-items:center; gap:30px; max-width:950px; margin:0 auto;">
     <img src="https://www.churchofjesuschrist.org/imgs/57efa9db7ae0bb889d74594f5a694c413b4483de/full/3840%2C/0/default" style="width:180px; height:180px; border-radius:50%; object-fit:cover; border:4px solid #ffd700;" alt="President Russell M. Nelson">
@@ -252,7 +304,7 @@
 
 ---
 
-<!-- SLIDE 13: Quiz Q6 – Manasseh -->
+<!-- SLIDE 17: Quiz Q6 – Manasseh -->
 <section data-background-gradient="radial-gradient(#2c1a1a, #1a1a1a)">
   <h3 style="color: white;">Q6: Which king reigned the longest and did much evil?</h3>
   <p style="color: #aaa;">2 Kings 21:1-9</p>
@@ -267,7 +319,7 @@
 
 ---
 
-<!-- SLIDE 14: Quiz Q7 – Josiah finds the Law -->
+<!-- SLIDE 18: Quiz Q7 – Josiah finds the Law -->
 <section data-background-image="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=1600" data-background-opacity="0.2" data-background-color="#1a1a2e">
   <h3 style="color: white;">Q7: What did Josiah do when the Book of the Law was found?</h3>
   <p style="color: #aaa;">2 Kings 22:11, 23:1-3</p>
@@ -281,7 +333,7 @@
 
 ---
 
-<!-- SLIDE 15: GC Quote 5 – Daily scripture study -->
+<!-- SLIDE 19: GC Quote 5 – Daily scripture study -->
 <section data-background-color="#0f3460">
   <div style="display:flex; align-items:center; gap:30px; max-width:950px; margin:0 auto;">
     <img src="https://www.churchofjesuschrist.org/bc/content/shared/content/images/leaders/thomas-s-monson-large.jpg" style="width:180px; height:180px; border-radius:50%; object-fit:cover; border:4px solid #4ade80;" alt="President Thomas S. Monson">
@@ -295,7 +347,7 @@
 
 ---
 
-<!-- SLIDE 16: Quiz Q8 – Josiah's Passover -->
+<!-- SLIDE 20: Quiz Q8 – Josiah's Passover -->
 <section data-background-gradient="radial-gradient(#1a2e1a, #1a1a2e)">
   <h3 style="color: white;">Q8: Josiah's Passover was described as:</h3>
   <p style="color: #aaa;">2 Kings 23:21-23</p>
@@ -309,7 +361,7 @@
 
 ---
 
-<!-- SLIDE 17: Quiz Q9 – Fall of Judah -->
+<!-- SLIDE 21: Quiz Q9 – Fall of Judah -->
 <section data-background-image="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?w=1600" data-background-opacity="0.2" data-background-color="#2c1810">
   <h3 style="color: white;">Q9: Why did Judah finally fall to Babylon?</h3>
   <p style="color: #aaa;">2 Kings 24:2-4</p>
@@ -323,7 +375,7 @@
 
 ---
 
-<!-- SLIDE 18: GC Quote 6 – Repentance / heeding prophets -->
+<!-- SLIDE 22: GC Quote 6 – Repentance / heeding prophets -->
 <section data-background-color="#532e1c">
   <div style="display:flex; align-items:center; gap:30px; max-width:950px; margin:0 auto;">
     <img src="https://news-ie.churchofjesuschrist.org/media/960x1280/Massimo-De-Feo-APy2019.jpg" style="width:180px; height:180px; border-radius:50%; object-fit:cover; border:4px solid #ffd700;" alt="Elder Massimo de Feo">
@@ -340,7 +392,7 @@
 
 ---
 
-<!-- SLIDE 19: Quiz Q10 – Gedaliah -->
+<!-- SLIDE 23: Quiz Q10 – Gedaliah -->
 <section data-background-gradient="radial-gradient(#2c1a1a, #1a1a2e)">
   <h3 style="color: white;">Q10: After Jerusalem fell, who was left to care for the land?</h3>
   <p style="color: #aaa;">2 Kings 25:12, 22</p>
@@ -354,7 +406,7 @@
 
 ---
 
-<!-- SLIDE 20: GC Quote 7 – Christ / hope even after failure -->
+<!-- SLIDE 24: GC Quote 7 – Christ / hope even after failure -->
 <section data-background-color="#0f3460">
   <div style="display:flex; align-items:center; gap:30px; max-width:950px; margin:0 auto;">
     <img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Neil_L._Andersen_April_2019.jpg" style="width:180px; height:180px; border-radius:50%; object-fit:cover; border:4px solid #4ade80;" alt="Elder Neil L. Andersen">
@@ -368,7 +420,7 @@
 
 ---
 
-<!-- SLIDE 21: Discussion -->
+<!-- SLIDE 25: Discussion -->
 <section data-background-color="#0f3460">
   <h2 style="color: white;">Discussion – Click to reveal</h2>
   <div style="text-align:left; max-width:850px; margin:20px auto; color:#e8e8e8;">
@@ -381,7 +433,7 @@
 
 ---
 
-<!-- SLIDE 22: Takeaway -->
+<!-- SLIDE 26: Takeaway -->
 <section data-background-color="#e94560" data-background-image="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1600" data-background-opacity="0.15">
   <h1 style="color: white;">Choose to Follow God</h1>
   <h3 style="color: #1a1a2e;">Even when leaders around you don't</h3>
