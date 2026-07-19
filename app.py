@@ -5,6 +5,50 @@ from collections import Counter
 
 st.set_page_config(page_title="Sunday School", layout="wide", page_icon="📖")
 
+# --- Global CSS: bigger quiz fonts, slide depth, remove dotted lines ---
+st.markdown("""
+<style>
+/* Bigger quiz fonts */
+.stRadio > label, div[data-testid="stRadio"] label {
+    font-size: 1.25rem !important;
+}
+div[data-testid="stRadio"] div[role="radiogroup"] label {
+    font-size: 1.35rem !important;
+    padding: 0.5rem 0 !important;
+    line-height: 1.5 !important;
+}
+/* Question text */
+h3, .stMarkdown h3 {
+    font-size: 1.9rem !important;
+}
+/* Quiz container – add indentation / depth */
+section.main > div, .block-container {
+    padding-left: 1.5rem !important;
+}
+div[data-testid="stVerticalBlock"] > div:has(> div[data-testid="stRadio"]) {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 1.5rem 1.8rem !important;
+    margin-left: 12px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.07), -4px 0 0 #0ea5b9;
+    border-left: 5px solid #0ea5b9;
+}
+/* Remove any dotted top borders */
+*, *::before, *::after {
+    border-top-style: none !important;
+}
+div[data-testid="stVerticalBlock"] > div:has(> div[data-testid="stRadio"])::before,
+.slide-header::after {
+    display: none !important;
+    content: none !important;
+}
+/* Bigger radio option text specifically */
+div[role="radiogroup"] p {
+    font-size: 1.3rem !important;
+}
+</style>
+""", unsafe_allow_html=True)
+
 # --- Try imports ---
 try:
     import reveal_slides as rs
@@ -84,14 +128,14 @@ QUIZZES = {
         },
         {
             "q": "Which king of Judah reigned the longest and did much evil in the sight of the Lord?",
-            "opts": ["Josiah – 31 years", "Manasseh – 55 years", "Hezekiah – 29 years", "Zedekiah – 11 years"],
+            "opts": ["Josiah", "Manasseh", "Hezekiah", "Zedekiah"],
             "a": 1,
             "ref": "2 Kings 21:1-9",
             "explain_correct": "Manasseh reigned 55 years in Jerusalem – the longest reign of any king of Judah – and 'did evil in the eyes of the Lord, following the detestable practices of the nations' (2 Kings 21:2). He rebuilt the high places his father Hezekiah had destroyed, erected altars to Baal, and even sacrificed his own son.",
             "explain_wrong": {
-                0: "Josiah DID reign 31 years and he was one of Judah's BEST kings – he found the Book of the Law and led a national revival. Not evil at all.",
-                2: "Hezekiah DID reign 29 years and he was one of Judah's BEST kings – 'he held fast to the Lord and did not stop following him' (2 Kings 18:6).",
-                3: "Zedekiah DID reign 11 years and he WAS evil – but only 11 years, not the longest. He was the last king before Jerusalem fell."
+                0: "Josiah reigned 31 years and he was one of Judah's BEST kings – he found the Book of the Law and led a national revival. Not evil at all.",
+                2: "Hezekiah reigned 29 years and he was one of Judah's BEST kings – 'he held fast to the Lord and did not stop following him' (2 Kings 18:6).",
+                3: "Zedekiah reigned 11 years and he WAS evil – but only 11 years, not the longest. He was the last king before Jerusalem fell."
             }
         },
         {
