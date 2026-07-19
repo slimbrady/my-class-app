@@ -25,21 +25,19 @@
 .reveal li, .reveal ul li { font-size: 1.35em !important; line-height: 1.55 !important; }
 .reveal p { font-size: 1.15em; }
 
-/* Remove any dotted line at the top */
+/* Remove any dotted/dashed lines at the tops of slides */
 .reveal .slide-header::after,
 .reveal .slides section::before,
 .reveal .slides section::after {
   display: none !important;
   content: none !important;
   border: none !important;
+  box-shadow: none !important;
 }
-
-/* Slide depth / indentation */
 .reveal .slides section {
-  padding-left: 2.2rem !important;
-  box-shadow: -8px 0 28px rgba(0,0,0,0.18), inset 6px 0 0 rgba(14,165,185,0.22) !important;
-  border-radius: 14px !important;
-  background-clip: padding-box;
+  box-shadow: none !important;
+  border: none !important;
+  border-top: none !important;
 }
 </style>
 
@@ -56,7 +54,7 @@
 <!-- SLIDE 2: Ahaz intro with image -->
 <section data-background-gradient="linear-gradient(135deg, #2c1a1a, #1a1a2e)">
   <div style="display:flex; align-items:center; gap:30px; max-width:1000px; margin:0 auto;">
-    <img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=400" style="width:350px; border-radius:12px; box-shadow: 0 8px 24px rgba(0,0,0,0.5);" alt="Damascus altar">
+    <img src="https://i0.wp.com/christianpublishinghouse.co/wp-content/uploads/2026/01/Altar-King-Ahaz-Built-in-Damascus.jpg?w=1200&ssl=1" style="width:350px; border-radius:12px; box-shadow: 0 8px 24px rgba(0,0,0,0.5);" alt="Altar King Ahaz built in Damascus">
     <div style="text-align:left;">
       <h2 style="color:#e94560;">King Ahaz</h2>
       <h3 style="color:white;">2 Kings 16</h3>
@@ -86,7 +84,32 @@
 
 ---
 
-<!-- SLIDE 4: Quiz Q1 – Hezekiah -->
+<!-- SLIDE 4: Kings Timeline Diagrams -->
+<section data-background-color="#1a1a2e">
+  <h2 style="color:#e94560; margin-bottom:20px;">Kings of Israel & Judah</h2>
+  <div style="display:flex; justify-content:center; align-items:flex-start; gap:20px; flex-wrap:wrap; max-width:1100px; margin:0 auto;">
+    <div style="flex:1; min-width:280px;">
+      <img src="https://i.pinimg.com/736x/b0/e2/21/b0e221cab540a3c881d6ff8b50b1d8e7.jpg" style="width:100%; max-width:340px; border-radius:10px; box-shadow: 0 6px 20px rgba(0,0,0,0.4);" alt="Kings of Judah timeline">
+      <p style="color:#aaa; font-size:0.55em; margin-top:6px;">Kings of Judah</p>
+    </div>
+    <div style="flex:1; min-width:280px;">
+      <img src="https://i.pinimg.com/1200x/52/0b/f9/520bf96601ea418a7a9ab64de34b16ee.jpg" style="width:100%; max-width:340px; border-radius:10px; box-shadow: 0 6px 20px rgba(0,0,0,0.4);" alt="Kings timeline diagram">
+      <p style="color:#aaa; font-size:0.55em; margin-top:6px;">Kings timeline</p>
+    </div>
+    <div style="flex:1; min-width:220px; display:flex; align-items:center; justify-content:center; min-height:200px; background:rgba(255,255,255,0.05); border-radius:10px; padding:20px;">
+      <div style="text-align:center;">
+        <p style="color:#ffd700; font-size:0.9em;">📖 Kings Timeline</p>
+        <p style="color:#ccc; font-size:0.7em; margin-top:10px;"><a href="https://www.pinterest.com/pin/319544536086478056/" target="_blank" style="color:#4ade80;">View on Pinterest →</a></p>
+        <p style="color:#888; font-size:0.55em; margin-top:8px;">Kings of the Bible<br>Old Testament kings timeline<br>2nd Kings</p>
+      </div>
+    </div>
+  </div>
+  <p style="color:#ccc; font-size:0.7em; margin-top:15px;">2 Kings 16–25 covers the last kings of Judah: Ahaz → Hezekiah → Manasseh → Josiah → … → Zedekiah (fall of Jerusalem)</p>
+</section>
+
+---
+
+<!-- SLIDE 5: Quiz Q1 – Hezekiah -->
 <section data-background-gradient="radial-gradient(#1a1a2e, #16213e)">
   <h3 style="color: white;">Q1: Who was king of Judah when Israel fell to Assyria?</h3>
   <p style="color: #aaa;">2 Kings 18:9-10</p>
@@ -150,7 +173,7 @@
     <li>D: He freed the captives</li>
   </ul>
   <div class="fragment" data-fragment-index="1" style="margin-top:15px;">
-    <img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=400" style="width:300px; border-radius:8px; opacity:0.7;" alt="altar">
+    <img src="https://i0.wp.com/christianpublishinghouse.co/wp-content/uploads/2026/01/Altar-King-Ahaz-Built-in-Damascus.jpg?w=1200&ssl=1" style="width:300px; border-radius:8px; opacity:0.85;" alt="Altar King Ahaz built in Damascus">
   </div>
 </section>
 
