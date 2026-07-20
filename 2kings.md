@@ -12,50 +12,14 @@
   7. Neil L. Andersen – "We Talk of Christ" – Oct 2020
 -->
 
-<style>
-/* --- NUKE ALL TOP LINES / DOTS --- */
-*, *::before, *::after {
-  border: none !important;
-  border-top: none !important;
-  outline: none !important;
-}
-.reveal *, .reveal *::before, .reveal *::after {
-  box-shadow: none !important;
-}
-.reveal .slides section,
-.reveal .slides section::before,
-.reveal .slides section::after {
-  border: none !important;
-  border-top: none !important;
-  box-shadow: none !important;
-  outline: none !important;
-}
-.reveal .progress, .reveal .slide-number, .reveal .controls, .reveal .playback,
-.reveal .speaker-notes, .reveal .pause-overlay { display: none !important; }
-hr, .slide-header::after { display:none !important; content:none !important; }
 
-/* --- Typography --- */
-.reveal h1 { font-size: 2.2em; }
-.reveal h2 { font-size: 1.6em; }
-.reveal h3 { font-size: 1.5em; }
-.reveal p, .reveal li { font-size: 0.85em; line-height: 1.45; }
-.reveal ul { margin: 10px auto; }
-
-/* GC Quote – BIG */
-.gc-quote { font-size: 1.35em !important; line-height: 1.5 !important; color: #ffd700 !important; font-style: italic !important; }
-.gc-speaker-img { width: 210px !important; height: 210px !important; border-radius: 50% !important; object-fit: cover !important; }
-.gc-attrib { font-size: 0.78em !important; color: #ccc !important; }
-.gc-context { font-size: 0.7em !important; color: #ccc !important; }
-
-.reveal .slides section { padding: 15px 30px !important; }
-</style>
 
 <!-- SLIDE 1: Title -->
 <section data-background-image="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1600" data-background-opacity="0.3" data-background-color="#1a1a2e">
   <h1>2 Kings 16–25</h1>
   <h2 style="color: #e94560;">Faithful Kings • Fallen Kingdom</h2>
   <p style="color: #cccccc;">Ahaz • Hezekiah • Manasseh • Josiah • Babylon</p>
-  <p class="gc-context" Arrow keys to advance • ⬇️ Down for quiz answers</p>
+  <p class="gc-context"> Arrow keys to advance • ⬇️ Down for quiz answers</p>
 </section>
 
 ---
