@@ -4,6 +4,20 @@ from datetime import datetime
 from collections import Counter
 import streamlit as st
 
+
+try:
+    import reveal_slides as rs
+    HAS_SLIDES = True
+except Exception:
+    HAS_SLIDES = False
+
+try:
+    import qrcode
+    from io import BytesIO
+    HAS_QR = True
+except Exception:
+    HAS_QR = False
+
 # 1. Page Configuration (Must always be the first Streamlit command)
 st.set_page_config(page_title="Sunday School", layout="wide", page_icon="📖")
 
@@ -67,19 +81,6 @@ else:
     # Fallback if the package is missing, parsing HTML elements safely
     st.components.v1.html(markdown_content, height=600, scrolling=True)
 
-# --- Try imports section ---
-try:
-    import reveal_slides as rs
-    HAS_SLIDES = True
-except Exception:
-    HAS_SLIDES = False
-
-try:
-    import qrcode
-    from io import BytesIO
-    HAS_QR = True
-except Exception:
-    HAS_QR = False
 
 # --- Quiz data – with explanations for every answer choice ---
 QUIZZES = {
