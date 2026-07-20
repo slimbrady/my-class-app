@@ -271,13 +271,29 @@ if mode == "Slides":
         # 2. RENDER THE SEPARATE TABS HERE INSTEAD OF FLOATING LATER IN THE FILE
         tab1, tab2 = st.tabs(["📊 Presentation Slides", "📝 Lesson Quiz"])
         
-        with tab1:
+                with tab1:
             if HAS_SLIDES:
-                # Increased height to 750 stops the text and image cutoff issues
-                rs.slides(markdown_content, height=850, theme="black")
+                slide_custom_css = """
+                .reveal .slides section { 
+                    padding: 15px 30px !important; 
+                    box-sizing: border-box !important; 
+                }
+                .reveal h3 { font-size: 1.6em !important; line-height: 1.3 !important; }
+                .reveal p, .reveal li { font-size: 0.85em !important; }
+                .reveal .slides { height: 100% !important; }
+                """
+                # ADDED THE UNSAFE HTML FLAG TO ENABLE THE VERTICAL HTML TAGS
+                rs.slides(
+                    markdown_content, 
+                    height=850, 
+                    theme="black", 
+                    css=slide_custom_css,
+                    allow_unsafe_html=True  # <--- THIS ENABLES THE DOWN ARROW STACKING
+                )
             else:
                 st.info("Slide viewer: install `streamlit-reveal-slides` for full slide mode. Showing markdown fallback.")
                 st.markdown(markdown_content, unsafe_allow_html=True)
+
                 
         with tab2:
             st.subheader("Sunday School Quiz")
