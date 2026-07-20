@@ -61,8 +61,11 @@ st.html(
 # 3. Read and render your cleaned Markdown slides file
 with open("2kings.md", "r") as f:
     markdown_content = f.read()
-
-st.markdown(markdown_content)
+if HAS_SLIDES:
+    rs.slides(markdown_content, height=500, theme="black")
+else:
+    # Fallback if the package is missing, parsing HTML elements safely
+    st.components.v1.html(markdown_content, height=600, scrolling=True)
 
 # --- Try imports section ---
 try:
