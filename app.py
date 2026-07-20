@@ -71,30 +71,6 @@ st.html(
     </style>
     """
 )
-
-with open("2kings.md", "r") as f:
-    markdown_content = f.read()
-
-# Create your application navigation workspace tabs
-tab1, tab2 = st.tabs(["📊 Presentation Slides", "📝 Lesson Quiz"])
-
-with tab1:
-    # Placing this inside tab1 guarantees it ONLY displays on the slides panel
-    if HAS_SLIDES:
-        # Increased height parameters from 500 to 750 to stop text from cutting off
-        rs.slides(markdown_content, height=750, theme="black")
-    else:
-        # Fallback if package fails, using native clean framework height bounds
-        st.components.v1.html(markdown_content, height=750, scrolling=True)
-
-with tab2:
-    st.subheader("Sunday School Quiz")
-    # ========================================================
-    # PASTE YOUR EXISTING QUIZ / RADIO CODE MANUALLY BELOW HERE
-    # ========================================================
-    # Example: st.radio("Question 1...", ["Option A", "Option B"])
-
-
 # --- Quiz data – with explanations for every answer choice ---
 QUIZZES = {
     "2 Kings 16-25": [
