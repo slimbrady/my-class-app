@@ -49,8 +49,6 @@ hr, .slide-header::after { display:none !important; content:none !important; }
 
 .reveal .slides section { padding: 15px 30px !important; }
 </style>
-import streamlit as st
-st.write(st.__version__)
 
 <!-- SLIDE 1: Title -->
 <section data-background-image="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1600" data-background-opacity="0.3" data-background-color="#1a1a2e">
