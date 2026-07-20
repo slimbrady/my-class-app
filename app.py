@@ -1,80 +1,70 @@
-import streamlit as st
-import json, os
+import json
+import os
 from datetime import datetime
 from collections import Counter
+import streamlit as st
 
+# 1. Page Configuration (Must always be the first Streamlit command)
 st.set_page_config(page_title="Sunday School", layout="wide", page_icon="📖")
 
+# 2. Universal styling application wrapper
 st.html(
     """
     <style>
-    hr {
+    /* Safely target and destroy all host container dotted borders/lines */
+    hr, .stMarkdownContainer hr, [data-testid="stHeader"]::after {
         border: none !important;
         height: 0 !important;
         display: none !important;
     }
-    .stMarkdownContainer hr {
-        display: none !important;
+    
+    /* Bigger quiz fonts */
+    .stRadio > label, div[data-testid="stRadio"] label { 
+        font-size: 1.25rem !important; 
+    }
+    div[data-testid="stRadio"] div[role="radiogroup"] label { 
+        font-size: 1.35rem !important; 
+        padding: 0.5rem 0 !important; 
+        line-height: 1.5 !important; 
+    }
+
+    /* Question text style specifications */
+    h3, .stMarkdown h3 { 
+        font-size: 1.9rem !important; 
+    }
+
+    /* Quiz block design structure setup */
+    section.main > div, .block-container { 
+        padding-left: 1.5rem !important; 
+    }
+    div[data-testid="stVerticalBlock"] > div:has(> div[data-testid="stRadio"]) { 
+        background: #ffffff; 
+        border-radius: 14px; 
+        padding: 1.5rem 1.8rem !important; 
+        margin-left: 12px; 
+        box-shadow: 0 4px 18px rgba(0,0,0,0.07), -4px 0 0 #0ea5b9; 
+        border-left: 5px solid #0ea5b9; 
+    }
+
+    div[data-testid="stVerticalBlock"] > div:has(> div[data-testid="stRadio"])::before, .slide-header::after { 
+        display: none !important; 
+        content: none !important; 
+    }
+
+    div[role="radiogroup"] p { 
+        font-size: 1.3rem !important; 
     }
     </style>
     """
 )
 
-# --- Global CSS: bigger quiz fonts, slide depth, remove dotted lines --- 
-st.markdown("""
-<style>
-/* Bigger quiz fonts */
-.stRadio > label, div[data-testid="stRadio"] label { 
-    font-size: 1.25rem !important; 
-}
-div[data-testid="stRadio"] div[role="radiogroup"] label { 
-    font-size: 1.35rem !important; 
-    padding: 0.5rem 0 !important; 
-    line-height: 1.5 !important; 
-}
+# 3. Read and render your cleaned Markdown slides file
+with open("2kings.md", "r") as f:
+    markdown_content = f.read()
 
-/* Question text */
-h3, .stMarkdown h3 { 
-    font-size: 1.9rem !important; 
-}
+st.markdown(markdown_content)
 
-/* Quiz container – add indentation / depth */
-section.main > div, .block-container { 
-    padding-left: 1.5rem !important; 
-}
-div[data-testid="stVerticalBlock"] > div:has(> div[data-testid="stRadio"]) { 
-    background: #ffffff; 
-    border-radius: 14px; 
-    padding: 1.5rem 1.8rem !important; 
-    margin-left: 12px; 
-    box-shadow: 0 4px 18px rgba(0,0,0,0.07), -4px 0 0 #0ea5b9; 
-    border-left: 5px solid #0ea5b9; 
-}
-
-/* SAFELY target and remove ONLY dotted/horizontal slide dividers */
-hr {
-    border: none !important;
-    height: 0 !important;
-    display: none !important;
-}
-.stMarkdownContainer hr {
-    display: none !important;
-}
-
-div[data-testid="stVerticalBlock"] > div:has(> div[data-testid="stRadio"])::before, .slide-header::after { 
-    display: none !important; 
-    content: none !important; 
-}
-
-/* Bigger radio option text specifically */
-div[role="radiogroup"] p { 
-    font-size: 1.3rem !important; 
-}
-</style>
-""", unsafe_allow_html=True)
-
-
-# --- Try imports ---
+# --- Try imports section ---
 try:
     import reveal_slides as rs
     HAS_SLIDES = True
