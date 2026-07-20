@@ -1,25 +1,13 @@
 <!-- 
   2 KINGS 16-25 – Sunday School Slides
-  Youth Ages 12-16
-  
-  GENERAL CONFERENCE QUOTES INCLUDED (with speaker, date, source):
-  1. Neil L. Andersen – "We Talk of Christ" – Oct 2020
-  2. Jeffrey R. Holland – "Waiting on the Lord" – Oct 2020  
-  3. Russell M. Nelson – "Drawing the Power of Jesus Christ into Our Lives" – Apr 2017
-  4. Russell M. Nelson – "The Book of Mormon: What Would Your Life Be Like without It?" – Oct 2017
-  5. Thomas S. Monson – "The Power of the Book of Mormon" – Apr 2017
-  6. Massimo de Feo – "Rise! He Calleth Thee" – Apr 2024
-  7. Neil L. Andersen – "We Talk of Christ" – Oct 2020
--->
-
-
+ 
 
 <!-- SLIDE 1: Title -->
-<section data-background-image="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1600" data-background-opacity="0.3" data-background-color="#1a1a2e">
+<section data-background-image="https://unsplash.com" data-background-opacity="0.3" data-background-color="#1a1a2e">
   <h1>2 Kings 16–25</h1>
   <h2 style="color: #e94560;">Faithful Kings • Fallen Kingdom</h2>
   <p style="color: #cccccc;">Ahaz • Hezekiah • Manasseh • Josiah • Babylon</p>
-  <p class="gc-context"> Arrow keys to advance • ⬇️ Down for quiz answers</p>
+  <p class="gc-context">Arrow keys to advance • ⬇️ Down for quiz answers</p>
 </section>
 
 ---
