@@ -274,7 +274,7 @@ if mode == "Slides":
         with tab1:
             if HAS_SLIDES:
                 # Increased height to 750 stops the text and image cutoff issues
-                rs.slides(markdown_content, height=750, theme="black")
+                rs.slides(markdown_content, height=850, theme="black")
             else:
                 st.info("Slide viewer: install `streamlit-reveal-slides` for full slide mode. Showing markdown fallback.")
                 st.markdown(markdown_content, unsafe_allow_html=True)
