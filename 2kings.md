@@ -34,7 +34,7 @@
 <section data-background-color="#16213e">
   <h2 style="color:#e94560;">Review: 1 Kings</h2>
   <div style="display:flex; align-items:center; gap:25px; max-width:960px; margin:15px auto; flex-wrap:wrap; justify-content:center;">
-    <img src="https://i.pinimg.com/736x/b0/e2/21/b0e221cab540a3c881d6ff8b50b1d8e7.jpg" style="width:400px; border-radius:8px;" alt="Kings of Judah timeline">
+    <img src="https://i.pinimg.com/736x/b0/e2/21/b0e221cab540a3c881d6ff8b50b1d8e7.jpg" style="width:325px; border-radius:8px;" alt="Kings of Judah timeline">
     <div style="text-align:left; color:#ddd; max-width:520px;">
       <h3 style="color:#ffd700; font-size:1.15em;">Solomon → Divided Kingdom</h3>
       <ul style="font-size:0.75em;">
