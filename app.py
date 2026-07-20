@@ -285,17 +285,33 @@ with st.sidebar:
 
 # --- Slides mode ---
 if mode == "Slides":
+    # 1. We still look up which lesson file to load based on the user's choice
     md_file = LESSONS[lesson]
+    
     try:
         with open(md_file, "r", encoding="utf-8") as f:
-            content = f.read()
-        if HAS_SLIDES:
-            rs.slides(content, allow_unsafe_html=True)
-        else:
-            st.info("Slide viewer: install `streamlit-reveal-slides` for full slide mode. Showing markdown fallback.")
-            st.markdown(content, unsafe_allow_html=True)
+            markdown_content = f.read()
+            
+        # 2. RENDER THE SEPARATE TABS HERE INSTEAD OF FLOATING LATER IN THE FILE
+        tab1, tab2 = st.tabs(["📊 Presentation Slides", "📝 Lesson Quiz"])
+        
+        with tab1:
+            if HAS_SLIDES:
+                # Increased height to 750 stops the text and image cutoff issues
+                rs.slides(markdown_content, height=750, theme="black")
+            else:
+                st.info("Slide viewer: install `streamlit-reveal-slides` for full slide mode. Showing markdown fallback.")
+                st.markdown(markdown_content, unsafe_allow_html=True)
+                
+        with tab2:
+            st.subheader("Sunday School Quiz")
+            # ========================================================
+            # YOUR QUIZ / RADIO CODE (QUIZZES = { ... }) SITS NATIVELY HERE
+            # ========================================================
+
     except FileNotFoundError:
         st.error(f"Missing {md_file}")
+
 
 # --- Interactive Quiz mode ---
 elif mode == "Interactive Quiz":
