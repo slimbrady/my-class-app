@@ -112,32 +112,33 @@
 ---
 <!-- SLIDE 8: Quiz Q1 – Hezekiah -->
 <section>
-<section>
-  <h3 style="font-size:1.6em; margin-bottom:10px;">Q1: Who was king of Judah when the northern kingdom of Israel fell to Assyria?</h3>
-  <p style="color:#aaa; font-size:0.7em;">2 Kings 18:9-10</p>
-  <div style="display:flex; justify-content:center; gap:30px; align-items:center; margin-top:15px;"><img src="https://images.unsplash.com/photo-1461360370896-922624d12aa1?w=280" style="width:180px; border-radius:8px; opacity:0.85;" alt="Jerusalem">
-  <ul style="color:white; text-align:left; max-width:680px; margin:15px auto; font-size:0.95em;">
-    <li style="margin-bottom:8px;">A: Ahaz</li>
-    <li style="margin-bottom:8px;">B: Hezekiah</li>
-    <li style="margin-bottom:8px;">C: Josiah</li>
-    <li style="margin-bottom:8px;">D: Manasseh</li>
-  </ul>
-  </div>
-  <p style="color:#888; font-size:0.55em; margin-top:15px;">⬇️ Down for answer</p>
-</section>
-<section>
-  <h3 style="color:#4ade80; font-size:1.3em;">Q1 Answer: B. Hezekiah</h3>
-  <p class="gc-context">2 Kings 18:9-10</p>
-  <div style="text-align:left; max-width:900px; margin:10px auto; font-size:0.58em; line-height:1.45; color:#ddd;">
-    <p><strong style="color:#4ade80;">Why correct:</strong> Hezekiah was king of Judah in the 6th year of his reign when Samaria fell (722 BC). He trusted in the Lord unlike the kings of Israel – 2 Kings 18:5 says 'there was no one like him among all the kings of Judah.'</p>
-    <div style="margin-top:10px; color:#ccc;">
-      <strong>Why the others are wrong:</strong>
+   <!-- VERTICAL SLIDE 8A: The Question -->
+   <section data-background-color="#1a1a2e">
+    <h3 style="font-size:1.6em; margin-bottom:10px;">Q1: Who was king of Judah when the northern kingdom of Israel fell to Assyria?</h3>
+    <p style="color:#aaa; font-size:0.7em;">2 Kings 18:9-10</p>
+    <div style="display:flex; justify-content:center; gap:30px; align-items:center; margin-top:15px;"><img src="https://images.unsplash.com/photo-1461360370896-922624d12aa1?w=280"         style="width:180px; border-radius:8px; opacity:0.85;" alt="Jerusalem">
+    <ul style="color:white; text-align:left; max-width:680px; margin:15px auto; font-size:0.95em;">
+      <li style="margin-bottom:8px;">A: Ahaz</li>
+      <li style="margin-bottom:8px;">B: Hezekiah</li>
+      <li style="margin-bottom:8px;">C: Josiah</li>
+      <li style="margin-bottom:8px;">D: Manasseh</li>
+    </ul>
+    </div>
+    <p class="gc-context" style="color: #666;">Press the DOWN arrow for the correct answer</p>
+  </section>     
+
+  <!-- VERTICAL SLIDE 8B: The Answer & Explanations -->
+  <section data-background-color="#111122" style="overflow-y: auto !important;">
+    <h2 style="color: #0ea5b9;">Correct Answer: B) Hezekiah</h2>
+    <p class="gc-context">2 Kings 18:9-10</p>
+    <div style="text-align:left; max-width:850px; margin:10px auto; font-size:0.58em; line-height:1.45; color:#ddd;">
+      <p><strong style="color:#4ade80;">Why correct:</strong> Hezekiah was king of Judah in the 6th year of his reign when Samaria fell (722 BC). He trusted in the Lord unlike the kings of Israel – 2 Kings 18:5 says 'there was no one like him among all the kings of Judah.'</p>
+      <hr style="border-top: 1px solid #444 !important; display: block !important; margin: 10px 0;">
       <p style="margin:4px 0;"><strong>A. Ahaz</strong> – Ahaz was Hezekiah's father – he died before Israel fell. Ahaz was the one who copied the pagan altar from Damascus (2 Kings 16).</p>
       <p style="margin:4px 0;"><strong>C. Josiah</strong> – Josiah came about 90 years later – he was the boy king who found the Book of the Law in the temple (2 Kings 22).</p>
       <p style="margin:4px 0;"><strong>D. Manasseh</strong> – Manasseh was Hezekiah's son – he reigned AFTER Hezekiah, for 55 evil years (2 Kings 21).</p>
     </div>
-  </div>
-</section>
+  </section>
 </section>
 
 ---
